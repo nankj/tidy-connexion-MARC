@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Tidy MARC from Connexion</title>
+	
+	<link rel="stylesheet" href="marcConvert.css">
+	<script type="text/javascript" src="marcConvert.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<br><br>
+<h1>Tidy up MARC copied from OCLC Connexion</h1>
+<p>Strip out extra spaces before and after subfield delimiters, remove tabs, and change double-dagger to pipe.</p>
+<textarea id="input" placeholder="drop MARC here">
+</textarea>
+<br><br>
+<button id="btn" onclick="convertAndCopy()"onclick>Convert and copy to clipboard</button>
+<br><br>
+<textarea id="output" style="white-space:pre" placeholder="pick up clean MARC here">
+</textarea>
+</div>
+
+</div>
+</body>
+</html>
