@@ -19,9 +19,9 @@ function convertAndCopy() {
 								.replace(/(\d{4})_/g,'$1 ')
 								.replace(/ (\|.) /g,'$1');
 
-// now convert text copied from OCLC Connexion:
+// now convert text copied from OCLC Connexion (web or client):
 	outputText =   outputText.replace(/ +\t(\d{3})\t? \t(?:  \t)?([\d\_]{2}|  )[ \t]+(.*)/gm,'$1$2$3')
-								.replace(/ ‡(.) /g,'|$1')
+								.replace(/ (?:ǂ|‡)(.) /g,'|$1')
 								.replace(/_‡(.) /g,'_|$1')
 								.replace(/(\d{3,4})_/g,'$1 ');
 	
